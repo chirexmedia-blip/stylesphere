@@ -109,6 +109,68 @@ nav a:hover {
 section {
   padding: 55px 6%;
 }
+  .fashion-gallery {
+  background: var(--cream);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 35px auto 0;
+}
+
+.fashion-card {
+  background: var(--white);
+  border: 1px solid #E5DACA;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.fashion-card:hover {
+  transform: translateY(-5px);
+}
+
+.fashion-card img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.fashion-card-text {
+  padding: 24px;
+}
+
+.fashion-card-text span {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.fashion-card-text h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0;
+  color: var(--charcoal);
+}
+
+.fashion-card-text p {
+  color: #77716A;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fashion-card img {
+    height: 350px;
+  }
+}
 
 .section-heading {
   font-family: Georgia, serif;
@@ -302,6 +364,59 @@ footer p {
 
   </div>
 </section>
+  <section class="fashion-gallery" id="trending">
+
+  <h2 class="section-heading">The Style Edit</h2>
+
+  <div class="gold-line"></div>
+
+  <p class="section-description">
+    Discover the looks, details, and designs shaping fashion.
+  </p>
+
+  <div class="gallery-grid">
+
+    <article class="fashion-card">
+      <img
+        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
+        alt="Elegant bridal fashion"
+        loading="lazy"
+      >
+      <div class="fashion-card-text">
+        <span>01 / BRIDAL</span>
+        <h3>Made for Your Moment</h3>
+        <p>Discover timeless elegance.</p>
+      </div>
+    </article>
+
+    <article class="fashion-card">
+      <img
+        src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80"
+        alt="Contemporary women's fashion"
+        loading="lazy"
+      >
+      <div class="fashion-card-text">
+        <span>02 / READY-TO-WEAR</span>
+        <h3>Everyday, Elevated</h3>
+        <p>Style that speaks for itself.</p>
+      </div>
+    </article>
+
+    <article class="fashion-card">
+      <img
+        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+        alt="Fashion portrait and styling"
+        loading="lazy"
+      >
+      <div class="fashion-card-text">
+        <span>03 / STYLE</span>
+        <h3>Your Signature Look</h3>
+        <p>Express your individuality.</p>
+      </div>
+    </article>
+
+  </div>
+  </section>
 
 <section class="feature" id="designers">
   <h2>Meet the Creators</h2>

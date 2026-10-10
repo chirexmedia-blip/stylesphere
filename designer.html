@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Rosey Atelier | StyleSphere</title>  <style>
+    :root {
+      --grey: #8A8580;
+      --beige: #F2E8D9;
+      --gold: #C6A66B;
+      --charcoal: #33312F;
+      --cream: #FAF8F4;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      background: var(--cream);
+      border-bottom: 1px solid rgba(198, 166, 107, 0.35);
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    header a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 14px;
+    }
+
+    .hero {
+      background: var(--beige);
+      padding: 75px 7%;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--grey);
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(35px, 7vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--charcoal);
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 25px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: var(--charcoal);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .about {
+      padding: 65px 7%;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about h2,
+    .collections h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: var(--grey);
+    }
+
+    .collections {
+      padding: 65px 7%;
+      background: var(--beige);
+      text-align: center;
+    }
+
+    .collection-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      max-width: 1000px;
+      margin: 35px auto 0;
+    }
+
+    .collection-card {
+      background: var(--cream);
+      padding: 35px 20px;
+      border: 1px solid rgba(198, 166, 107, 0.45);
+    }
+
+    .collection-number {
+      color: var(--gold);
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .collection-card h3 {
+      margin: 12px 0 8px;
+    }
+
+    .collection-card p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .contact {
+      padding: 65px 7%;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 25px 7%;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    @media (min-width: 700px) {
+      .collection-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style></head><body>  <header>
+    <a href="index.html" class="logo">STYLE<span>SPHERE</span></a>
+    <a href="index.html">← Back to Discover</a>
+  </header>  <section class="hero">
+    <p class="eyebrow">Featured Designer · Nigeria</p>
+    <h1>Rosey Atelier</h1>
+    <div class="gold-line"></div>
+    <p>
+      Where creativity meets precision. Discover elegant designs
+      created to celebrate individuality, confidence, and timeless style.
+    </p>
+    <a href="#collections" class="button">EXPLORE COLLECTIONS</a>
+  </section>  <section class="about">
+    <p class="eyebrow">The Designer</p>
+    <h2>Crafted With Intention</h2>
+    <div class="gold-line"></div>
+    <p>
+      Rosey Atelier is a fashion brand concept dedicated to thoughtful
+      design, beautiful craftsmanship, and distinctive style. From
+      special-occasion outfits to statement pieces, every design aims
+      to help the wearer feel confident and unforgettable.
+    </p>
+  </section>  <section class="collections" id="collections">
+    <p class="eyebrow">Discover the Style</p>
+    <h2>Our Specialties</h2>
+    <div class="gold-line"></div><div class="collection-grid">
+
+  <div class="collection-card">
+    <div class="collection-number">01</div>
+    <h3>Bridal Couture</h3>
+    <p>Elegant designs for life's most meaningful moments.</p>
+  </div>
+
+  <div class="collection-card">
+    <div class="collection-number">02</div>
+    <h3>Traditional Wear</h3>
+    <p>Contemporary craftsmanship inspired by cultural beauty.</p>
+  </div>
+
+  <div class="collection-card">
+    <div class="collection-number">03</div>
+    <h3>Bespoke Fashion</h3>
+    <p>Personalised designs created around your vision.</p>
+  </div>
+
+</div>
+
+  </section>  <section class="contact">
+    <p class="eyebrow">Start a Conversation</p>
+    <h2>Have a Design in Mind?</h2>
+    <p>Get in touch to discuss a custom design or collaboration.</p>
+    <a href="index.html#custom" class="button">MAKE AN ENQUIRY</a>
+  </section>  <footer>
+    <p>© 2026 <span>StyleSphere</span>. Discover Your Style. Define Your World.</p>
+  </footer></body>
+                </html>
